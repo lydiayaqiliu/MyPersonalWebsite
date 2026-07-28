@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lydialand — Lydia Liu's Personal Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <span class="site-name">Lydialand 🌱</span>
+    <nav class="tabs" role="tablist" aria-label="Site sections">
+      <button class="tab-btn active" data-tab="home" role="tab" aria-selected="true">Home</button>
+      <button class="tab-btn" data-tab="education" role="tab" aria-selected="false">Education</button>
+      <button class="tab-btn" data-tab="research" role="tab" aria-selected="false">Research</button>
+      <button class="tab-btn" data-tab="work" role="tab" aria-selected="false">Work Experience</button>
+      <button class="tab-btn" data-tab="projects" role="tab" aria-selected="false">Projects</button>
+      <button class="tab-btn" data-tab="skills" role="tab" aria-selected="false">Skills</button>
+    </nav>
+  </div>
+</header>
+
+<main class="content">
+
+  <!-- HOME -->
+  <section id="home" class="tab-panel active" role="tabpanel">
+    <div class="home-grid">
+      <div class="photo-col">
+        <div class="photo-placeholder">
+          <img src="images/profile.jpg" alt="Lydia Liu">
+        </div>
+        <p class="photo-caption">In my free time, I enjoy writing fan novels featuring my favorite anime and novel characters. I've hidden a secret &ldquo;cheating&rdquo; entry to my collection somewhere on this page. you'll know it when you find it!</p>
+      </div>
+      <div class="home-text">
+        <h1>Lydia (yaqi) Liu <span class="chinese-name">柳雅淇</span></h1>
+        <p class="tagline">
+          Undergraduate Researcher<br>
+          Seeking PhD / Master's positions, Fall 2027
+        </p>
+
+        <div class="intent-callout">
+          <p>Hi, I'm Lydia! I'm a CS + Math student at UChicago who likes building reliable backend systems just as much as I like poking holes in them. Lately I've found my home in <strong>AI safety</strong>, doing research at the <a href="https://sandlab.cs.uchicago.edu" target="_blank" rel="noopener">SAND Lab</a>. Now I'm on the hunt for a PhD/Master's program starting Fall 2027. Feel free to reach me out at the contacts below!</p>
+        </div>
+
+        <ul class="contact-row">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>773-219-8693</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+            <a href="mailto:lydiayaqiliu@uchicago.edu">lydiayaqiliu@uchicago.edu</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-1.94c-3.16.69-3.83-1.36-3.83-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 2.87-.39c.97 0 1.95.13 2.87.39 2.19-1.47 3.15-1.16 3.15-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.66.79.55A11.53 11.53 0 0 0 23 11.52C23 5.24 18.27.5 12 .5z"/></svg>
+            <a href="https://github.com/lydiayaqiliu" target="_blank" rel="noopener">github.com/lydiayaqiliu</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            <a href="https://linkedin.com/in/lydiayaqiliu" target="_blank" rel="noopener">linkedin.com/in/lydiayaqiliu</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="tab-panel" role="tabpanel">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">University of Chicago</span>
+        <span class="entry-date">Expected May 2027</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Bachelor of Science, Computer Science, Mathematics, and Statistics</span>
+        <span class="entry-loc">Chicago, IL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="tab-panel" role="tabpanel">
+    <h2>Research Experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">SAND Lab, University of Chicago</span>
+        <span class="entry-date">Dec 2025 &ndash; Present</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Undergraduate Researcher &middot; advised by Ben Zhao &amp; Heather Zheng</span>
+        <span class="entry-loc">Chicago, IL</span>
+      </div>
+      <ul class="bullets">
+        <li>Updating and extending <strong>Fawkes</strong>, an image-cloaking tool that protects individuals against unauthorized facial recognition</li>
+        <li>Updating and extending <strong>Glaze</strong>, a tool that protects artists' work from AI style mimicry</li>
+        <li>Conducting AI safety research on <strong>targeted facial transformation</strong></li>
+        <li>Running <strong>Pangram red-team evaluations</strong>, probing the adversarial robustness of AI-text detection systems and analyzing model behavior under evasion strategies and distribution shift</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="tab-panel" role="tabpanel">
+    <h2>Work Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Carelumi</span>
+        <span class="entry-date">Jun 2025 &ndash; Dec 2025</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Backend Software Engineer Intern</span>
+        <span class="entry-loc">Chicago, IL</span>
+      </div>
+      <ul class="bullets">
+        <li>Developed backend services using FastAPI to support secure ingestion and retrieval of structured healthcare data</li>
+        <li>Provisioned cloud infrastructure on AWS (EC2, RDS PostgreSQL, S3) to enable persistent storage and scalable service hosting</li>
+        <li>Implemented database access controls and query logic via PostgreSQL Row-Level Security to support multi-tenant data isolation requirements</li>
+        <li>Integrated an LLM API&ndash;based document processing workflow to automate validation of healthcare documents</li>
+        <li>Established containerized deployment and automated testing workflow using Docker and GitHub Actions CI/CD</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Tiptop Technologies, Inc</span>
+        <span class="entry-date">Dec 2024 &ndash; Mar 2025</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Backend Developer Intern</span>
+        <span class="entry-loc">Remote</span>
+      </div>
+      <ul class="bullets">
+        <li>Stabilized backend infrastructure prior to product launch by diagnosing and resolving failures in FastAPI services</li>
+        <li>Designed and optimized API endpoints for asset management workflows, improving responsiveness of frontend data requests</li>
+        <li>Resolved concurrency issues in backend request handling by refining database access logic and constraint strategies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="tab-panel" role="tabpanel">
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Satellite Constellation Planner</span>
+        <span class="entry-date">Mar 2026 &ndash; Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Built a scheduling engine coordinating observation tasks across satellite nodes</li>
+        <li>Applying stateful execution modeling and property-based testing to ensure correctness of distributed scheduling logic</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">ML-Driven Ad Generation Pipeline</span>
+        <span class="entry-date">Jul 2025 &ndash; Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Prototyped a FastAPI backend with the BLIP-3 vision-language model for an automated ad generation workflow</li>
+        <li>Designed a lightweight inference pipeline using FastAPI and AWS compute/storage services</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="tab-panel" role="tabpanel">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Programming Languages</h3>
+        <div class="pills">
+          <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Web Frameworks</h3>
+        <div class="pills">
+          <span class="pill">FastAPI</span><span class="pill">Flask</span><span class="pill">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Databases &amp; Storage</h3>
+        <div class="pills">
+          <span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">DynamoDB</span><span class="pill">Amazon S3</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <div class="pills">
+          <span class="pill">AWS (EC2, S3)</span><span class="pill">Docker</span><span class="pill">CI/CD (GitHub Actions)</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Machine Learning</h3>
+        <div class="pills">
+          <span class="pill">PyTorch</span><span class="pill">Hugging Face</span><span class="pill">LLM APIs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <div class="pills">
+          <span class="pill">Git</span><span class="pill">Linux</span><span class="pill">pytest</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Lydia Liu &middot; 773-219-8693 &middot; <a href="mailto:lydiayaqiliu@uchicago.edu">lydiayaqiliu@uchicago.edu</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
