@@ -34,10 +34,10 @@
         <div class="photo-placeholder">
           <img src="images/profile.jpg" alt="Lydia Liu">
         </div>
-        <p class="photo-caption">In my free time, I enjoy writing fan novels featuring my favorite anime and novel characters. I've hidden a secret &ldquo;cheating&rdquo; entry to my collection somewhere on this page. you'll know it when you find it!</p>
+        <p class="photo-caption">In my free time, I enjoy writing fan novels and playing video games, and my favorite video game is Cyberpunk2077. I've hidden a secret &ldquo;cheating&rdquo; entry to my collection somewhere on this page. you'll know it when you find it!</p>
       </div>
       <div class="home-text">
-        <h1>Lydia (yaqi) Liu <span class="chinese-name">柳雅淇</span></h1>
+        <h1>Lydia (Ya Qi) Liu <span class="chinese-name">柳雅淇</span></h1>
         <p class="tagline">
           Undergraduate Researcher<br>
           Seeking PhD / Master's positions, Fall 2027
@@ -213,9 +213,22 @@
 </main>
 
 <footer class="site-footer">
-  <p>Lydia Liu &middot; ydiayaqiliu+at+uchicago.edu</p>
+  <p>Lydia Liu &middot; lydiayaqiliu+at+uchicago.edu</p>
 </footer>
 
+<div id="vault-modal" class="vault-modal">
+  <div class="vault-box">
+    <button id="vault-close-btn" class="vault-close" aria-label="Close">&times;</button>
+    <p class="vault-label">encrypted address</p>
+    <p id="vault-cipher" class="vault-cipher"></p>
+    <label class="vault-label" for="vault-pass">passphrase</label>
+    <input id="vault-pass" class="vault-input" type="text" autocomplete="off" spellcheck="false">
+    <button id="vault-decrypt-btn" class="vault-btn">decrypt</button>
+    <p id="vault-result" class="vault-result"></p>
+  </div>
+</div>
+
 <script src="script.js"></script>
+<script src="vault.js"></script>
 </body>
 </html>
